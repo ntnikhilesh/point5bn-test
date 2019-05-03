@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import {Router} from '@angular/router';
+
 import {
   AuthService,
   FacebookLoginProvider,
@@ -12,7 +14,7 @@ import {
 })
 export class LoginComponent implements OnInit {
 
-  constructor(private socialAuthService: AuthService) { }
+  constructor(private router: Router, private socialAuthService: AuthService) { }
 
   ngOnInit() {
   }
@@ -25,6 +27,7 @@ export class LoginComponent implements OnInit {
     this.socialAuthService.signIn(socialPlatformProvider).then(
       (userData) => {
         console.log(" sign in data : ", userData);
+        this.router.navigate(['/chat/dashboard'])
       }
     );
   }
