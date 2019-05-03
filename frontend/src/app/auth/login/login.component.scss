@@ -1,0 +1,15 @@
+.container{
+    padding: 0px;
+    .row{
+        text-align: center;
+        padding: 100px;
+        margin: 0px;
+        .title-col{
+            padding: 0px;
+        }
+        .action-col{
+            padding: 0px;
+            margin-top: 10px;
+        }
+    }
+}
