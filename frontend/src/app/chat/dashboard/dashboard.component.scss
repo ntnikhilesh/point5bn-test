@@ -1,0 +1,20 @@
+.container{
+    padding: 50px;
+    .title-row{
+        margin: 20px 0px;
+        .title-col{
+            padding: 0px;
+        }
+    }
+
+    .content-row{
+        margin: 10px 0px;
+        .content-name-col{
+            padding: 0px;
+        }
+        .content-count-col{
+            padding: 0px;
+        }
+    }
+    
+}

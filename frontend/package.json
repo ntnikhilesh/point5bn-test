@@ -10,7 +10,7 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "style-lint": "stylelint 'src/**/*.scss' --config .stylelintrc",
-    "heroku-postbuild": "ng build --prod"
+    "heroku-postbuild": "ng build --aot -prod"
   },
   "husky": {
     "hooks": {
@@ -19,6 +19,7 @@
   },
   "private": true,
   "dependencies": {
+    "@angular/cli": "~7.0.3",
     "@angular/animations": "^7.0.4",
     "@angular/cdk": "^7.3.2",
     "@angular/common": "~7.0.0",
