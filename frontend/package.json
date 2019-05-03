@@ -1,0 +1,81 @@
+{
+  "name": "fed-ramp",
+  "version": "0.0.0",
+  "scripts": {
+    "ng": "ng",
+    "start": "node server.js",
+    "build": "ng build",
+    "prod": "ng build --prod",
+    "test": "ng test",
+    "lint": "ng lint",
+    "e2e": "ng e2e",
+    "style-lint": "stylelint 'src/**/*.scss' --config .stylelintrc",
+    "heroku-postbuild": "ng build --prod"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run prod"
+    }
+  },
+  "private": true,
+  "dependencies": {
+    "@angular/animations": "^7.0.4",
+    "@angular/cdk": "^7.3.2",
+    "@angular/common": "~7.0.0",
+    "@angular/compiler": "~7.0.0",
+    "@angular/core": "~7.0.0",
+    "@angular/forms": "~7.0.0",
+    "@angular/http": "~7.0.0",
+    "@angular/material": "^7.3.2",
+    "@angular/platform-browser": "~7.0.0",
+    "@angular/platform-browser-dynamic": "~7.0.0",
+    "@angular/router": "~7.0.0",
+    "@ng-bootstrap/ng-bootstrap": "^4.1.0",
+    "angular": "^1.7.7",
+    "angular-font-awesome": "^3.1.2",
+    "angular-password-strength-meter": "0.0.4",
+    "bootstrap": "^4.3.1",
+    "chart.js": "^2.8.0",
+    "core-js": "^2.5.4",
+    "express": "^4.16.4",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "ng-recaptcha": "^4.2.1",
+    "ngx-bootstrap": "^4.0.1",
+    "ngx-editor": "^4.1.0",
+    "ngx-loading": "^3.0.1",
+    "ngx-toastr": "^10.0.2",
+    "rxjs": "~6.3.3",
+    "typescript": "~3.1.1",
+    "zone.js": "~0.8.26",
+    "zxcvbn": "^4.4.2"
+  },
+  "devDependencies": {
+    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular/cli": "~7.0.3",
+    "@angular/compiler-cli": "^7.2.12",
+    "@angular/language-service": "~7.0.0",
+    "@types/jasmine": "~2.8.8",
+    "@types/jasminewd2": "~2.0.3",
+    "@types/jquery": "^3.3.29",
+    "@types/node": "~8.9.4",
+    "codelyzer": "~4.5.0",
+    "husky": "^1.3.1",
+    "jasmine-core": "~2.99.1",
+    "jasmine-spec-reporter": "~4.2.1",
+    "karma": "~3.0.0",
+    "karma-chrome-launcher": "~2.2.0",
+    "karma-coverage-istanbul-reporter": "~2.0.1",
+    "karma-jasmine": "~1.1.2",
+    "karma-jasmine-html-reporter": "^0.2.2",
+    "protractor": "~5.4.0",
+    "stylelint": "^9.10.1",
+    "stylelint-config-standard": "^18.2.0",
+    "ts-node": "~7.0.0",
+    "tslint": "~5.11.0"
+  },
+  "engines": {
+    "node": "10.11.0",
+    "npm": "6.4.1"
+  }
+}
